@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Perpustakaan</h2>
+    <a href="#" class="active">Daftar Buku</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+
+  <div class="main">
+    <h2>Daftar Buku</h2>
+    <button class="primary-btn" onclick="bukaModalTambah()">+ Tambah Buku</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Judul</th>
+          <th>Pengarang</th>
+          <th>Tahun</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="tutupModal()">&times;</span>
+      <h3 id="modal-title">Tambah Buku</h3>
+      <input type="hidden" id="editIndex">
+      <input type="text" id="judul" placeholder="Judul Buku">
+      <input type="text" id="pengarang" placeholder="Pengarang">
+      <input type="text" id="tahun" placeholder="Tahun Terbit">
+      <button class="primary-btn" onclick="simpanBuku()">Simpan</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
