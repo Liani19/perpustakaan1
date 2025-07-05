@@ -129,6 +129,46 @@ th, td {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .sidebar h2 {
+    font-size: 18px;
+  }
+
+  .sidebar ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  table {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .primary-btn {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}
+
+
 .close:hover {
   color: black;
 }
